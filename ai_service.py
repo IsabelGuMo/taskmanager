@@ -11,16 +11,7 @@ def create_simple_tasks(description):
     if not client.api_key:
         return ["Error: La API key de OpenAI no está configurada."]
     
-    try:
-        prompt = f"""Desglosa la siguiente tarea compleja en una lista de 3 tareas simples y accionables
-
-        
     
-        Responde solo con la lista de subtareas, una por linea empezando cada línea con un guión."""
-
-        params = {
-            "model": "gpt-5",
-            "messages": [
                 {"role": "system", "content": "Eres un asistente experto en gestión de tareas que ayuda a dividir tareas complejas en pasos simples y accionables."},
                 {"role": "user", "content": prompt}
             ],
