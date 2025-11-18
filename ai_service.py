@@ -21,7 +21,7 @@ def create_simple_tasks(description):
         3. Subtarea 3
         etc.
     
-        Responde solo con la lista de subtareas, una por linea empezando cada línea con un guión."""
+        Responde solo con la lista  de subtareas, una por linea empezando cada línea con un guión."""
 
         params = {
             "model": "gpt-5",
