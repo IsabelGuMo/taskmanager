@@ -14,12 +14,7 @@ def create_simple_tasks(description):
     try:
         prompt = f"""Desglosa la siguiente tarea compleja en una lista de 3 tareas simples y accionables
 
-        Tarea: {description}
-        Foramto de respuesta:
-        1. Subtarea 1
-        2. Subtarea 2
-        3. Subtarea 3
-        etc.
+        
     
         Responde solo con la lista de subtareas, una por linea empezando cada línea con un guión."""
 
